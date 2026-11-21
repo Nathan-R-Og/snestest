@@ -1,0 +1,6 @@
+*.smc
+*.sym
+*.o
+__pycache__
+tools/outputs
+wla/

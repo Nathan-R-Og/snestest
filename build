@@ -1,0 +1,7 @@
+#!/bin/bash
+#$1 == filename
+#$2 == output
+rm -rf snes_test.smc
+wla/wla-65816 -o snes_test.o src/main.asm
+wla/wlalink -S -r link.txt snes_test.smc
+rm -rf snes_test.o
